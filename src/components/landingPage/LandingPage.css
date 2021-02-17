@@ -1,0 +1,12 @@
+.LandinPage {
+     width: 100vw;
+     padding-left: 4rem;
+     padding-right: 4rem;
+     padding-top: 2.2rem;
+}
+
+.LandinPage__title {
+     color :  #ff751a;
+     text-align: left;
+     
+}

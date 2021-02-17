@@ -1,0 +1,22 @@
+
+.List {
+     width: 100%;
+     border-bottom: 1px solid grey ;
+     box-shadow: 3px 0 grey;
+     text-align: left;
+     padding-left: 1rem;
+     padding-top: 1rem;
+     padding-bottom: 0.5rem;
+     margin-bottom: 5px;
+     background-color: white;
+}
+
+.List__container_P {
+     display: inline;
+     margin-right: 1.2rem;
+}
+
+.List__container_button {
+     display: block;
+     margin: 0.7rem;
+}

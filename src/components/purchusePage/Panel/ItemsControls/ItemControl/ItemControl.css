@@ -1,0 +1,17 @@
+.ItemControl {
+     width: 100%;
+     background-color: white;
+     border-bottom: 1px solid gray;
+}
+
+.ItemControl__text {
+     display: inline;
+     margin-right: 5rem;
+     text-align: center;
+}
+
+.ItemControl__price-text {
+     display: inline;
+     margin-left: 3rem;
+     text-align: right;
+}

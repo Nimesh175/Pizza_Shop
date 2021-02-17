@@ -1,0 +1,19 @@
+.TransactionPage {
+     width: 100vw;
+     height: 100vh;
+     padding-left: 4rem;
+     padding-right: 4rem;
+     padding-top: 2.2rem;
+}
+
+.TransactionPage__title {
+     color :  #ff751a;
+     text-align: left;
+     
+}
+
+.TransactionPage__home {
+     position: absolute;
+     top: 2rem;
+     right: 4rem;
+}

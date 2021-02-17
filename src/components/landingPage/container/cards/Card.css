@@ -1,0 +1,11 @@
+/* */
+.cardSize {
+     height: 340px;
+     width: 270px;
+     margin: 10px;
+     /* display: inline; */
+}
+
+.myButton:hover {
+     transform: scale(1.1);
+}
