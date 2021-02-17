@@ -6,6 +6,9 @@ export {
      countMoreOnions,
      countLessCheese,
      countLessChicken,
-     countLessOnions
+     countLessOnions,
+     countReset
 
 } from './panel__counter/actionCreator'
+
+export {showTransaction} from './transaction/actionCreator'

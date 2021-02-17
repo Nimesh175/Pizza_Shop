@@ -12,13 +12,15 @@ class Container extends Component {
      constructor(props) {
           super(props)
           this.state = {
-               itemList : []
+               itemList : [],
+
           }
      }
 
 
      
   componentDidMount(){
+
      axios.get('/items.json')
           .then( response => {
                let objArray = [];
@@ -35,6 +37,8 @@ class Container extends Component {
           .catch( error => alert('componentDidMount() [ERROR:01]'));
 
    }
+
+   
 
 
      render() {

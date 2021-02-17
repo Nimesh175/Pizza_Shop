@@ -1,0 +1,1 @@
+export const SHOW_TRANSACTION = "SHOW_TRANSACTION"

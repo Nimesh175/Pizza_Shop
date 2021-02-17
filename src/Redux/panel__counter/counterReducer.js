@@ -4,7 +4,8 @@ import {
      COUNT_MORE_ONIONS,
      COUNT_LESS_CHEESE,
      COUNT_LESS_CHICKEN,
-     COUNT_LESS_ONIONS
+     COUNT_LESS_ONIONS,
+     COUNT_RESET
                } from './actionType';
 
 
@@ -50,7 +51,14 @@ const counterReducer = (state=initialState , action) => {
                return {
                     ...state ,
                     countOnions : ( state.countOnions !== 0 ) ? state.countOnions - 1 : 0
-               }     
+               } 
+               
+          case  COUNT_RESET :
+               return{
+                    countCheese : 0 ,
+                    countChicken : 0,
+                    countOnions : 0
+                }
      
           default:
                return state

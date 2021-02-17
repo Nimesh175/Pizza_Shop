@@ -3,6 +3,9 @@ import React, { Component } from 'react'
 import './PurchusePage.css'
 import imgPizza from '../../assests/P__pizza.png'
 import Panel from './Panel/Panel'
+import store from '../../Redux/store'
+
+import {countReset } from '../../Redux/index'
 
  class PurchusePage extends Component {
 
@@ -19,6 +22,10 @@ import Panel from './Panel/Panel'
                     <br/>
                </div>
           )
+     }
+
+     componentWillUnmount(){
+          store.dispatch(countReset())
      }
 }
 

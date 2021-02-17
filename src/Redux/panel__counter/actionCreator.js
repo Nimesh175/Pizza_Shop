@@ -4,7 +4,8 @@ import {
      COUNT_MORE_ONIONS,
      COUNT_LESS_CHEESE,
      COUNT_LESS_CHICKEN,
-     COUNT_LESS_ONIONS
+     COUNT_LESS_ONIONS,
+     COUNT_RESET
                } from './actionType';
 
 
@@ -41,5 +42,11 @@ export  const countLessChicken = () => {
 export  const countLessOnions = () => {
      return {
           type : COUNT_LESS_ONIONS
+     }
+}
+
+export  const countReset = () => {
+     return {
+          type : COUNT_RESET
      }
 }

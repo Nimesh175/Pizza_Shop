@@ -3,6 +3,7 @@ import ItemControls from './ItemsControls/ItemControls';
 import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
 import store from '../../../Redux/store'
+import axios from '../../../axios-instance'
 
 import './Panel.css'
 import {  updateItem  } from '../../../Redux/index'
@@ -10,8 +11,29 @@ import {EXTRA_CHEESE_PRICE , EXTRA_CHICKEN_PRICE , EXTRA_ONIONS_PRICE} from '../
 
 
 class Panel extends Component {
+   
+     constructor(props) {
+          super(props)
+
+          this.handlePurchaseDetails = this.handlePurchaseDetails.bind(this);
+     }
+
+     handlePurchaseDetails = () => {
+          let transaction = {
+               title : this.props.title ,
+               date  : new Date().toLocaleString() ,
+               countCheese : store.getState().counter.countCheese ,
+               countChicken :store.getState().counter.countChicken ,
+               countOnions : store.getState().counter.countOnions ,
+               total : this.props.total
+          }
+
+          axios.post('/transaction.json' ,transaction)
+               .then((res) => console.log("[ yes ]" + res))
+               .catch((err) => console.log("[ NO ]" +err))
+     }
+
      render() {
-          console.log(this.props)
           return (
 
                     <div className={"Panel mt-4"}>
@@ -29,7 +51,7 @@ class Panel extends Component {
                               </Link>
 
                               <Link to="/transactions">
-                                   <button className={"btn btn-success m-3"}>PURCHASE </button>
+                                   <button onClick={this.handlePurchaseDetails} className={"btn btn-success m-3"}>PURCHASE </button>
                               </Link>
                          
                          </div>
