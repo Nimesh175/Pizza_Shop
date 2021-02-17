@@ -20,8 +20,11 @@ const Card = (props) => {
                                         type:UPDATE_ITEM ,
                                         payload : props
                                    })}}
-                                   className={"btn btn-warning myButton"} >ADD</button>
+                                   className={"btn btn-warning myButton"} 
+                               >ADD
+                               </button>
                          </Link>
+                         
                     </div>
                </div> 
           )
@@ -32,5 +35,3 @@ const Card = (props) => {
 
 
 export default Card
-
-// onClick={(props)=> {  store.getState().itemObject. updateItemHandler(props) } }

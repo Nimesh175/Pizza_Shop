@@ -26,7 +26,7 @@ class Container extends Component {
                     objArray.unshift(
                          {
                               ...response.data[key],
-                              id:key 
+                              id:response.data[key].id
                          }
                     )
                }

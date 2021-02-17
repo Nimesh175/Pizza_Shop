@@ -9,7 +9,7 @@ const initialState = {
      }
 }
 
-const cardReducer = (state=initialState , action) => {
+const panelReducer = (state=initialState , action) => {
      switch (action.type) {
           case UPDATE_ITEM :
                return {
@@ -23,4 +23,4 @@ const cardReducer = (state=initialState , action) => {
      }
 }
 
-export default cardReducer
+export default panelReducer

@@ -8,10 +8,10 @@ class ItemControl extends Component {
                <div className={"ItemControl"}>
                     <p className={"ItemControl__text"}>{this.props.name} Rs. {this.props.price}.00</p>
 
-                    <button className={"btn btn-outline-success m-2 p-1"}>MORE  + </button>
-                    <button className={"btn btn-outline-danger m-2 p-1"}>LESS  - </button>
+                    <button className={"btn btn-outline-success m-2 p-1"} onClick={this.props.moreExecutor} >MORE  + </button>
+                    <button className={"btn btn-outline-danger m-2 p-1"} onClick={this.props.lessExecutor} >LESS  - </button>
 
-                    <h6 className={"ItemControl__price-text"}> ^ 0 </h6>
+                    <h6 className={"ItemControl__price-text"}> [<span className={"text-danger"}><strong>{this.props.count}</strong></span>] </h6>
                </div>
           )
      }

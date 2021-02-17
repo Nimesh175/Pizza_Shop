@@ -1,9 +1,11 @@
 import {combineReducers} from 'redux'
 
-import cardReducer from './panel/panelReducer'
+import panelReducer from './panel/panelReducer'
+import counterReducer from './panel__counter/counterReducer'
 
 const rootReducers = combineReducers({
-     itemObject : cardReducer
+     itemObject : panelReducer ,
+     counter : counterReducer
 })
 
 export default rootReducers
