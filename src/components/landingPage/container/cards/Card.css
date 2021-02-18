@@ -1,11 +1,19 @@
 /* */
 .cardSize {
-     height: 340px;
+     height: 260px;
      width: 270px;
-     margin: 10px;
-     /* display: inline; */
+     margin: 7px;
+     box-shadow: 1px 1px 2px gray;
+     border-radius: 8px;
+     z-index: 5;
 }
 
 .myButton:hover {
      transform: scale(1.1);
+}
+
+.cardSize__image {
+     position: relative;
+     margin: auto;
+     width: 65%;
 }

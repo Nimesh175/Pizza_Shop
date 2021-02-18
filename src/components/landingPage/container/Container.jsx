@@ -5,6 +5,7 @@ import axios from '../../../axios-instance'
 
 import P__01 from '../../../assests/P__01.PNG'
 import P__02 from '../../../assests/P__02.PNG'
+import T2 from '../../../assests/T2.png'
 
 import './Container.css'
 
@@ -16,7 +17,6 @@ class Container extends Component {
 
           }
      }
-
 
      
   componentDidMount(){
@@ -35,11 +35,7 @@ class Container extends Component {
               this.setState({itemList : objArray})
            })
           .catch( error => alert('componentDidMount() [ERROR:01]'));
-
    }
-
-   
-
 
      render() {
           return (
@@ -52,6 +48,7 @@ class Container extends Component {
                          })
                }
                   
+               <img className={"CardContainer__bg-img"}  src={T2} />
                </div>
           )
      }

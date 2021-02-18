@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
+
+
+
 .TransactionPage {
      width: 100vw;
      height: 100vh;
@@ -7,6 +11,7 @@
 }
 
 .TransactionPage__title {
+     font-family: 'Kanit', sans-serif;
      color :  #ff751a;
      text-align: left;
      
@@ -17,3 +22,8 @@
      top: 2rem;
      right: 4rem;
 }
+
+hr {
+     box-shadow: 1px 1px 2px gray;
+}
+

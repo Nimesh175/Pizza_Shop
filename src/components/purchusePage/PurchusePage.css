@@ -1,18 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
+
+
 .PurshusePage {
      width: 100vw;
      padding-left: 4rem;
      padding-right: 4rem;
-     padding-top: 2.2rem;
+     padding-top: 2rem;
+     padding-bottom: 0;
 }
 
 .PurshusePage__title {
+     font-family: 'Kanit', sans-serif;
      color :  #ff751a;
      text-align: left;
      
 }
 
 .PurshusePage__main-img {
-     margin-top : 24px;
+     margin-top : 18px;
      min-width:200px;
-     width:40%;
+     width:30%;
+}
+
+
+
+.hr {
+     box-shadow: 1px 1px 2px gray;
 }

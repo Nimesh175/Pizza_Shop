@@ -9,9 +9,9 @@ import { UPDATE_ITEM } from '../../../../Redux/panel/actionType'
 const Card = (props) => {
           return(
                <div className="cardSize card">
-                    <img src={props.image} className="card-img-top mt-2" alt="..." />
+                    <img src={props.image} className="cardSize__image  card-img-top mt-2" alt="..." />
                     <div className=" card-body">
-                         <h5 className="card-title">{props.title}</h5>
+                         <h6 className="card-title"><strong>{props.title}</strong></h6>
                          <p className="card-text">Rs. {props.price}.00</p>
                         
                          <Link to="/purchase">

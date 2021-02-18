@@ -4,8 +4,8 @@ import './PurchusePage.css'
 import imgPizza from '../../assests/P__pizza.png'
 import Panel from './Panel/Panel'
 import store from '../../Redux/store'
-
 import {countReset } from '../../Redux/index'
+
 
  class PurchusePage extends Component {
 
@@ -13,13 +13,13 @@ import {countReset } from '../../Redux/index'
           return (
                <div className={"PurshusePage"}>
                     <h3 className={"PurshusePage__title"}>Purchase page</h3>
-                    <hr />
+                    <hr className={"hr"} />
                     <div className={"container"}>
                           <img className={"PurshusePage__main-img"} src={imgPizza}  alt={"..."} />
                     </div>
                     <Panel />
                     <br/>
-                    <br/>
+
                </div>
           )
      }

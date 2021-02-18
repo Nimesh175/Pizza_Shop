@@ -36,7 +36,7 @@ class Panel extends Component {
      render() {
           return (
 
-                    <div className={"Panel mt-4"}>
+                    <div className={"Panel mt-0"}>
                          <h5 className={"Panel__title"}>{this.props.title}</h5>
                          <h6 className={"Panel__title text-danger"}>Extra</h6>
                          <hr />
@@ -51,7 +51,7 @@ class Panel extends Component {
                               </Link>
 
                               <Link to="/transactions">
-                                   <button onClick={this.handlePurchaseDetails} className={"btn btn-success m-3"}>PURCHASE </button>
+                                   <button onClick={this.handlePurchaseDetails} className={"btn btn-success m-3 Panel__button "}>PURCHASE </button>
                               </Link>
                          
                          </div>

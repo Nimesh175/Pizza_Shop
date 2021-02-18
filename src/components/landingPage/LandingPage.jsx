@@ -2,8 +2,9 @@ import React, { Component } from 'react'
 import {Link } from 'react-router-dom'
 
 import Container from './container/Container'
-import store from '../../Redux/store'
 import axios from '../../axios-instance'
+
+
 
 import './LandingPage.css'
 
@@ -43,11 +44,11 @@ export default class LandingPage extends Component {
                     <Link to="/transactions">
                          <button 
                               className={"btn btn-outline-warning TransactionPage__home"}> 
-                                   <i className="fas fa-cart-arrow-down"></i> <span className={"text-danger"}>{this.state.itemList.length}</span>
+                                   <i className="fas fa-cart-arrow-down"></i> <span className={"text-danger"}>0{this.state.itemList.length}</span>
                          </button>
                     </Link>
 
-                    <hr />
+                    <hr className={"hr"} />
                     <Container />
                </div>
           )

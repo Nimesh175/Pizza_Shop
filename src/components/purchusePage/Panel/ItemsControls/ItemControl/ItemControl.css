@@ -2,6 +2,8 @@
      width: 100%;
      background-color: white;
      border-bottom: 1px solid gray;
+     box-shadow: 1px 0 2px gray;
+     z-index: 5;
 }
 
 .ItemControl__text {
@@ -14,4 +16,8 @@
      display: inline;
      margin-left: 3rem;
      text-align: right;
+}
+
+.ItemControl__button {
+    padding: 1px 1rem !important;
 }
